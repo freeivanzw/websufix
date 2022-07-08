@@ -1,25 +1,36 @@
 /* variables */
 :root {
 	--site-bg-color: #FFFFFF;
-	--main-color: #03D6E7;
-	--sub-main-color: #FED213;
-	--main-accent-color: #201E50;
-	--main-light: #A1A1A1;
-	--footer-color: #201E50;
-	--btn-bg: #03D6E7;
-	--btn-border: #03D6E7;
-	--btn-contrast: #0DCC71;
-	--btn-text: #FFFFFF;
-	--btn-text-hover: #03D6E7;
-	--text-color: #1F1F1F;
-	--text-light: #5F5F5F;
-	--text-contrast: #ffffff;
-	--text-main-color: #03D6E7;
-	--border-color: #03D6E7;
-	--icon-color: #1F1F1F;
-	--active-icon-color: #03D6E7;
-	--link-color: #1F1F1F;
-	--link-color-active: #03D6E7;
+	--main-color: #A60822;
+	--sub-main-color: #D90A2C;
+	--main-neutral-color: #FFDCE2;
+	--bg-neutral-color: #F5F7FA;
 
-	--section-bottom: 48px;
+	--text-color: #2C2A39;
+	--text-light: #868F9E;
+	--text-contrast: #EBEDF0;
+
+	--btn-bg: #D90A2C;
+	--btn-text: #FFFFFF;
+	--btn-bg-hover: #D90A2C;
+	--btn-text-hover: #FFFFFF;
+	--btn-bg-active: #A60822;
+	--btn-text-active: #FFFFFF;
+	--btn-bg-contrast: #F5F7FA;
+	--btn-text-contrast: #D90A2C;
+	--btn-bg-hover-contrast: #2C2A39;
+	--btn-text-hover-contrast: #F5F7FA;
+	--btn-bg-active-contrast: #D90A2C;
+	--btn-text-active-contrast: #FFFFFF;
+
+	--border-color: #868F9E;
+	--border-color-active: #2C2A39;
+
+	--icon-color: #D90A2C;
+	--active-icon-color: #A60822;
+
+	--link-color: #A60822;
+	--link-color-active: #2C2A39;
+
+	--section-bottom: 80px;
 }

@@ -1,0 +1,147 @@
+@media only screen and (min-width: 768px) {
+  .main_title,
+h1 {
+    font-size: 64px;
+    margin-bottom: 72px;
+  }
+
+  .section_title,
+h2 {
+    font-size: 52px;
+    margin-bottom: 60px;
+  }
+
+  .item_title,
+h3 {
+    font-size: 36px;
+    margin-bottom: 30px;
+  }
+
+  .btn {
+    font-size: 14px;
+    height: 70px;
+  }
+
+  .header_logo {
+    width: 155px;
+  }
+
+  .footer_grid {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    max-width: 1160px;
+  }
+
+  .footer_form {
+    padding: 60px 70px 80px 70px;
+    position: relative;
+  }
+
+  .footer_form > * {
+    width: 54%;
+  }
+
+  .footer_form .btn {
+    width: max-content;
+  }
+
+  .footer_form-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 46%;
+  }
+
+  .copyright {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .copyright Span {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  :root {
+    --section-bottom: 180px;
+  }
+
+  .header_menu {
+    display: block;
+  }
+
+  .header_menu Ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .header_menu Li {
+    margin: 0 15px;
+  }
+
+  .header_menu A {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s;
+  }
+
+  .header_menu A:hover {
+    color: var(--link-color);
+  }
+
+  .header_contacts {
+    display: flex;
+    margin-top: 30px;
+  }
+
+  .header_social {
+    display: flex;
+    margin-right: 10px;
+  }
+
+  .header_social Li {
+    margin: 0 5px;
+  }
+
+  .header_social A {
+    display: block;
+    font-size: 0;
+    padding: 5px;
+  }
+
+  .header_social A .icon {
+    transition: 0.3s;
+  }
+
+  .header_social A:hover .icon {
+    fill: var(--active-icon-color);
+  }
+
+  .phone_wrap {
+    padding-top: 5px;
+  }
+
+  .phone_wrap Ul {
+    margin-bottom: 15px;
+  }
+
+  .phone_wrap Ul A {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-color);
+    transition: 0.3s;
+  }
+
+  .phone_wrap Ul A:hover {
+    color: var(--link-color);
+  }
+
+  .mob_menu-open {
+    display: none;
+  }
+}
