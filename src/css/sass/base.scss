@@ -2,8 +2,8 @@ BODY, HTML {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.4;
+    font-size: 15px;
+    line-height: 1.5;
     width: 100%;
     min-width: 360px;
     height: 100%;
@@ -151,8 +151,8 @@ a:active {
 .main_title,
 h1 {
     font-family: 'Orelega-One';
+    font-weight: 700;
     display: inline-block;
-    font-weight: normal;
     font-size: 40px;
     line-height: 1.2;
     text-decoration: none;
@@ -168,8 +168,8 @@ a.main_title:hover {
 .section_title,
 h2 {
     font-family: 'Orelega-One';
+    font-weight: 700;
     display: inline-block;
-    font-weight: normal;
     font-size: 30px;
     line-height: 1.2;
     text-decoration: none;
@@ -181,8 +181,8 @@ h2 {
 .item_title,
 h3 {
     font-family: 'Orelega-One';
+    font-weight: 700;
     display: inline-block;
-    font-weight: normal;
     font-size: 22px;
     line-height: 1.2;
     text-decoration: none;

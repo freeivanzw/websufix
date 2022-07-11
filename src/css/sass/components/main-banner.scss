@@ -1,0 +1,44 @@
+.main_banner {
+    padding-bottom: var(--section-bottom);
+}
+
+.main_banner .centre {
+    display: flex;
+    flex-direction: column;
+}
+
+.main_banner Figure {
+    margin-bottom: 35px;
+    width: 100%;
+}
+
+.main_banner Figure Img {
+    width: 100%;
+    height: auto;
+}
+
+.main_banner .main_title {
+    font-weight: 700;
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main_banner-text {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.banner_btn-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.banner_btn-wrap .btn:nth-child(1) {
+    width: calc(54% - 5px)
+}
+
+.banner_btn-wrap .btn:nth-child(2) {
+    width: calc(46% - 5px)
+}

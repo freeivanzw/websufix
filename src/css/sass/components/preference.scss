@@ -1,0 +1,62 @@
+.preference {
+    padding-bottom: var(--section-bottom);
+}
+
+.preference .centre {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+}
+
+.preference_text {
+    margin-bottom: 30px;
+}
+
+.preference_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.preference_list Li {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: var(--bg-neutral-color);
+}
+
+.preference_list Li + Li {
+    margin-top: 20px;
+}
+
+.preference_list Img {
+    display: block;
+    position: absolute;
+    bottom: -20px;
+    right: 15px;
+    width: 100px;
+    height: auto;
+    z-index: 1;
+}
+
+.preference_list A {
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.4;
+    display: block;
+    width: 100%;
+    padding: 16px;
+    transition: 0.3s;
+    border-radius: 6px;
+    border: 1px dashed transparent;
+    z-index: 2;
+}
+
+.preference_list Li:nth-child(5n + 5) {
+    background-color: var(--site-bg-color);
+}
+
+.preference_list Li:nth-child(5n + 5) a {
+    border: 1px dashed var(--main-color);
+}

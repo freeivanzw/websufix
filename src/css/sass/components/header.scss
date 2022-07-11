@@ -7,6 +7,7 @@
 }
 
 .site_header .centre {
+    max-width: 1210px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -198,4 +199,24 @@
 
 .mob_menu .call_back Span {
     line-height: 1.4;
+}
+
+.top_svg-anim {
+    width: 50vw;
+    height: 50vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    animation: 15s linear 0s normal none infinite running rot;
+}
+
+@keyframes rot {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
 }
