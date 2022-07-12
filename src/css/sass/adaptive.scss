@@ -1,8 +1,22 @@
 @media only screen and (min-width : 480px)  {
-    
+    /* ХЕДЕР */
+
+    /* ФУТЕР */
+
+    /* ГОЛОВНИЙ БАННЕР */
+
+    /* ПЕРЕВАГИ */
+
 }
 
 @media only screen and (min-width : 640px)  {
+    /* ХЕДЕР */
+
+    /* ФУТЕР */
+
+    /* ГОЛОВНИЙ БАННЕР */
+
+    /* ПЕРЕВАГИ */
     .preference_list {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -23,13 +37,13 @@
     .main_title,
     h1 {
         font-size: 64px;
-        margin-bottom: 72px;
+        margin-bottom: 62px;
     }
 
     .section_title,
     h2 {
         font-size: 52px;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .item_title,
@@ -43,9 +57,13 @@
         height: 70px;
     }
 
+    /* ХЕДЕР */
+
     .header_logo {
         width: 155px;
     }
+
+    /* ФУТЕР */
 
     .footer_grid {
         grid-template-columns: repeat(4, 1fr);
@@ -54,7 +72,7 @@
     }
 
     .footer_form {
-        padding: 60px 70px 80px 70px;
+        padding: 75px 70px 80px 70px;
         position: relative;
     }
 
@@ -84,6 +102,8 @@
         margin-bottom: 0;
     }
 
+    /* ГОЛОВНИЙ БАННЕР */
+
     .main_banner .centre {
         flex-direction: row;
         align-items: center;
@@ -100,6 +120,8 @@
         flex: 0 1 60%;
         padding-left: 30px;
     }
+
+    /* ПЕРЕВАГИ */
 
     .preference_text {
         margin-bottom: 60px;
@@ -125,8 +147,10 @@
 
 @media only screen and (min-width : 1024px) {
     :root {
-        --section-bottom: 180px;
+        --section-bottom: 130px;
     }
+
+    /* ХЕДЕР */
 
     .header_menu {
         display: block;
@@ -205,9 +229,60 @@
         display: none;
     }
 
-    .main_banner {
-        padding-top: 100px;
+    /* ФУТЕР */
+
+    .footer_contacts {
+        padding-top: 70px;
+        padding-bottom: 122px;
     }
+
+    .footer_item-title {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+
+    .footer_list {
+        margin-bottom: 24px;
+    }
+
+    .footer_list Li,
+    .footer_list A {
+        font-size: 20px;
+    }
+
+    .footer_item > Span:not([class]) {
+        font-size: 16px;
+    }
+
+    .footer_text {
+        font-size: 20px;
+        margin-bottom: 38px;
+    }
+
+    .footer_form .btn {
+        margin-bottom: 0;
+        padding-left: 35px;
+        padding-right: 35px;
+    }
+
+    /* ГОЛОВНИЙ БАННЕР */
+
+    .main_banner {
+        padding-top: 62px;
+    }
+
+    .main_banner .main_title {
+        max-width: 500px;
+        margin-bottom: 35px;
+    }
+
+    .main_banner-text {
+        max-width: 515px;
+        font-size: 20px;
+        line-height: 1.6;
+        margin-bottom: 72px;
+    }
+
 
     .main_banner Figure {
         flex: 0 1 50%;
@@ -222,6 +297,13 @@
         max-width: 420px;
     }
 
+    /* ПЕРЕВАГИ */
+
+    .preference_text {
+        font-size: 20px;
+        max-width: 630px;
+    }
+
     .preference_list A {
         font-size: 26px;
         transition: 0.3s;
@@ -234,5 +316,11 @@
 }
 
 @media only screen and (min-width : 1280px) {
-    
+    /* ХЕДЕР */
+
+    /* ФУТЕР */
+
+    /* ГОЛОВНИЙ БАННЕР */
+
+    /* ПЕРЕВАГИ */
 }

@@ -1034,6 +1034,7 @@ a.sub_title:hover {
 }
 
 .mob-header_social A {
+  display: block;
   font-size: 0;
   padding: 5px;
 }
