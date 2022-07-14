@@ -1,0 +1,85 @@
+/*
+ПИТАННЯ
+*/
+
+.question {
+    padding-bottom: var(--section-bottom);
+}
+
+.question .centre {
+    max-width: 1000px;
+}
+
+.accordion Li {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+}
+
+.accordion Li.active {
+    box-shadow: 0px 40px 80px rgba(37, 35, 53, 0.07);
+}
+
+.accordion Li + Li {
+    margin-top: 5px;
+}
+
+.accordion_btn {
+    line-height: 1.4;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    padding: 10px  45px 10px 15px;
+    width: 100%;
+    min-height: 57px;
+    background-color: var(--bg-neutral-color);
+    position: relative;
+    border-radius: 6px;
+}
+
+.accordion_btn::before,
+.accordion_btn::after {
+    content: "";
+    width: 25px;
+    height: 1px;
+    background-color: #000;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    transition: 0.3s;
+}
+
+.accordion_btn::before {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.accordion Li.active .accordion_btn::before {
+    transform: translateY(-50%) rotate(135deg);
+    background-color: var(--main-color);
+}
+
+.accordion Li.active .accordion_btn::after {
+    transform: translateY(-50%) rotate(45deg);
+    background-color: var(--main-color);
+}
+
+.accordion_btn Img {
+    display: block;
+    margin-right: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+.accordion_box {
+    font-size: 14px;
+    line-height: 1.6;
+    padding: 15px;
+    display: none;
+}
+
+.accordion Li.active .accordion_box {
+    display: block;
+}

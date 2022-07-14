@@ -1,0 +1,161 @@
+/*
+ЕТАПИ РОЗРОБКИ
+ */
+.dev_stage {
+    padding-bottom: var(--section-bottom);
+}
+
+.dropdown-dev_stage {
+    margin-bottom: 0;
+}
+
+.dev_preference {
+    box-shadow: 0px 40px 80px rgba(37, 35, 53, 0.1);
+    border-radius: 0px 0px 6px 6px;
+}
+
+.dev_preference Aside {
+    display: none;
+}
+
+.dev_stage-hidden {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px 25px;
+    position: relative;
+}
+
+.dev-step {
+    text-transform: uppercase;
+    font-size: 10px;
+    line-height: 1;
+    display: block;
+    margin-bottom: 8px;
+    padding: 8px;
+    width: max-content;
+    background-color: var(--main-neutral-color);
+}
+
+.dev_stage-hidden Ul {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.dev_stage-hidden Li {
+    font-size: 14px;
+    line-height: 1.6;
+    font-weight: 500;
+    color: var(--text-light);
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    position: relative;
+}
+
+.dev_stage-hidden Li + Li {
+    margin-top: 15px;
+}
+
+.dev_stage-hidden Li::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 2px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 6px;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.dev_stage-hidden Ul B {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.btn.write_manager {
+    margin-bottom: 132px;
+}
+
+.dev_stage-bg {
+    display: block;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    bottom: 75px;
+    right: 32px;
+    z-index: -1;
+}
+
+.dev_stage_btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 -10px;
+    z-index: 1;
+}
+
+.dev_stage_btns .btn {
+    color: var(--text-color);
+    font-size: 8px;
+    padding: 0 10px;
+    position: relative;
+    width: calc( 50% - 5px);
+    max-width: max-content;
+}
+
+.dev_stage_btns .btn.prev_dev {
+    padding: 0 10px 0 34px;
+}
+
+.dev_stage_btns .btn.prev_dev::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-bottom: 2px solid var(--main-color);
+    border-left: 2px solid var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 13px;
+    transform: translateY(-50%) rotate(45deg);
+}
+.dev_stage_btns .btn.prev_dev::after {
+    content: "";
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    background-color: var(--main-color);
+}
+
+ .dev_stage_btns .btn.next_dev {
+     padding: 0 34px 0 10px;
+ }
+
+.dev_stage_btns .btn.next_dev::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-top: 2px solid var(--main-color);
+    border-right: 2px solid var(--main-color);
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%) rotate(45deg);
+}
+.dev_stage_btns .btn.next_dev::after {
+    content: "";
+    width: 16px;
+    height: 2px;
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    transform: translateY(-50%);
+    background-color: var(--main-color);
+}

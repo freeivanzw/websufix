@@ -4,6 +4,9 @@
   /* ФУТЕР */
   /* ГОЛОВНИЙ БАННЕР */
   /* ПЕРЕВАГИ */
+  /* ЕТАПИ РОЗРОБКИ */
+  /* БАННЕР ДВА */
+  /* ПИТАННЯ */
 }
 @media only screen and (min-width: 640px) {
   /* ХЕДЕР */
@@ -24,6 +27,100 @@
   .preference_list Li:nth-child(5n+5) {
     grid-column: 1/3;
   }
+
+  /* ЕТАПИ РОЗРОБКИ */
+  .dropdown-dev_stage {
+    display: none;
+  }
+
+  .dev_preference {
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+  }
+
+  .dev_preference Aside {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 32.5%;
+    min-width: 300px;
+    max-width: 378px;
+    padding: 25px 0 25px 25px;
+    background-color: #EBEDF0;
+  }
+
+  .dev_preference Aside Ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .dev_preference Aside A {
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.4;
+    display: block;
+    padding: 14px 20px;
+    transition: 0.3s;
+    border-radius: 3px 0px 0px 3px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .dev_preference Aside A:hover,
+.dev_preference Aside A.active {
+    background-color: #fff;
+  }
+
+  .dev_preference Aside A.active::before {
+    content: "";
+    width: 3px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--main-color);
+  }
+
+  .dev_stage-content {
+    display: flex;
+    flex: 1 1 auto;
+  }
+
+  .dev_stage-hidden Li {
+    font-size: 20px;
+  }
+
+  .dev_stage-hidden Li + Li {
+    margin-top: 30px;
+  }
+
+  .dev_stage-hidden Li::before {
+    top: 12px;
+  }
+
+  .dev_stage-hidden Ul B {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .dev_stage-hidden Ul {
+    margin-bottom: 60px;
+  }
+
+  .dev_stage-bg {
+    width: 240px;
+    height: 240px;
+    right: 60px;
+    bottom: 50px;
+  }
+
+  .dev_stage_btns {
+    display: none;
+  }
+
+  /* БАННЕР ДВА */
+  /* ПИТАННЯ */
 }
 @media only screen and (min-width: 768px) {
   .main_title,
@@ -130,6 +227,58 @@ h3 {
 
   .preference_list Img {
     width: 150px;
+  }
+
+  /* ЕТАПИ РОЗРОБКИ */
+  /* БАННЕР ДВА */
+  .banner_two .centre {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .banner_two-text {
+    font-size: 16px;
+    flex: 0 1 50%;
+    padding-right: 15px;
+  }
+
+  .banner_two Figure {
+    flex: 0 1 50%;
+    padding-left: 15px;
+  }
+
+  .banner_two-bg {
+    bottom: -815px;
+    right: -876px;
+    width: 996px;
+    height: 1102px;
+  }
+
+  /* ПИТАННЯ */
+  .accordion Li + Li {
+    margin-top: 20px;
+  }
+
+  .accordion_btn {
+    font-size: 20px;
+    padding: 10px 60px 10px 30px;
+    min-height: 90px;
+  }
+
+  .accordion_btn Img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .accordion_btn::before,
+.accordion_btn::after {
+    right: 30px;
+  }
+
+  .accordion_box {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 30px 60px 40px 80px;
   }
 }
 @media only screen and (min-width: 1024px) {
@@ -295,10 +444,31 @@ h3 {
 .preference_list Li:nth-child(5n+5) a:hover {
     border-color: var(--border-color);
   }
+
+  /* ЕТАПИ РОЗРОБКИ */
+  .dev_stage-hidden {
+    padding: 60px 96px;
+  }
+
+  /* БАННЕР ДВА */
+  .banner_two-text {
+    flex: 0 1 60%;
+    padding-right: 30px;
+  }
+
+  .banner_two Figure {
+    flex: 0 1 40%;
+    padding-left: 30px;
+  }
+
+  /* ПИТАННЯ */
 }
 @media only screen and (min-width: 1280px) {
   /* ХЕДЕР */
   /* ФУТЕР */
   /* ГОЛОВНИЙ БАННЕР */
   /* ПЕРЕВАГИ */
+  /* ЕТАПИ РОЗРОБКИ */
+  /* БАННЕР ДВА */
+  /* ПИТАННЯ */
 }

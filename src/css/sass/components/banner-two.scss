@@ -1,0 +1,32 @@
+/*
+БАННЕР ДВА
+ */
+.banner_two {
+    padding-bottom: var(--section-bottom);
+    position: relative;
+}
+
+.banner_two .centre {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_two-text {
+    font-size: 14px;
+}
+
+.banner_two Figure Img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.banner_two-bg {
+    position: absolute;
+    bottom: -471px;
+    right: -436px;
+    width: 534px;
+    height: 590px;
+    z-index: -1;
+    animation: 15s linear 0s normal none infinite running rot;
+}

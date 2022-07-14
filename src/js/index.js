@@ -73,7 +73,17 @@ $(function () {
         $('.mob_menu').removeClass('active')
     })
 
-    $('.order_delivery').dropdown();
+    $('.accordion_btn').on('click', function (e) {
+        e.preventDefault();
 
+        $(this).parent('li').toggleClass('active');
+    })
+
+
+
+
+
+    $('.order_delivery').dropdown();
+    $('.dropdown-dev_stage').dropdown();
 
 })
