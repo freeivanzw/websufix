@@ -79,10 +79,6 @@ $(function () {
         $(this).parent('li').toggleClass('active');
     })
 
-
-
-
-
     $('.order_delivery').dropdown();
     $('.dropdown-dev_stage').dropdown();
 

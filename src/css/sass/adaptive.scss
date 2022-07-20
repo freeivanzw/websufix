@@ -14,6 +14,8 @@
     /* ПИТАННЯ */
 
     /* СПИСОК РОБІТ */
+
+    /* ПРЕВЮ РОБІТ */
 }
 
 @media only screen and (min-width : 640px)  {
@@ -134,9 +136,15 @@
     /* ПИТАННЯ */
 
     /* СПИСОК РОБІТ */
+
+    /* ПРЕВЮ РОБІТ */
 }
 
 @media only screen and (min-width : 768px)  {
+    input[type=text], input[type=password], input[type=tel], input[type=number], textarea {
+        height: 70px;
+    }
+
     .main_title,
     h1 {
         font-size: 64px;
@@ -203,6 +211,46 @@
 
     .copyright Span {
         margin-bottom: 0;
+    }
+
+    .footer_form-row {
+        flex-direction: row;
+    }
+
+    .footer_form-text {
+        margin-bottom: 40px;
+    }
+
+    .footer_form-row Input[type=text] {
+        margin-bottom: 20px;
+    }
+
+    .footer_form-row Textarea {
+        height: 120px;
+    }
+
+    .footer_form-bottom {
+        flex-direction: row;
+    }
+
+    .footer_form-bottom .btn {
+        flex: 0 0 190px;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+    .footer_form-bottom Span {
+        flex: 1 1 auto;
+        padding-right: 20px;
+        text-align: start;
+    }
+
+    .footer_form-row Figure {
+        display: flex;
+    }
+
+    .footer_form-row Figure Img {
+        object-fit: cover;
     }
 
     /* ГОЛОВНИЙ БАННЕР */
@@ -354,6 +402,30 @@
         font-size: 14px;
     }
 
+    /* ПРЕВЮ РОБІТ */
+
+    .icon.works_swipe {
+        display: none;
+    }
+
+    .site_prev {
+        width: 100%;
+        margin: 0;
+    }
+
+    .deck_prev {
+        flex: 0 0 calc(100% - 370px);
+        width: calc(100% - 370px);
+        margin-right: 20px;
+    }
+
+    .deck_prev Img {
+        border: 40px solid transparent;
+    }
+
+    .mob_prev Img {
+        border: 40px solid transparent;
+    }
 }
 
 @media only screen and (min-width : 1024px) {
@@ -480,6 +552,21 @@
         padding-right: 35px;
     }
 
+    .footer_form-row Form {
+        padding: 80px 98px 80px 170px;
+    }
+
+    .form_radio input[type=radio]:checked + label,
+    .form_radio input[type=radio]:not(:checked) + label {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form_radio .icon {
+        margin: 0 15px 0 0;
+    }
+
     /* ГОЛОВНИЙ БАННЕР */
 
     .main_banner {
@@ -561,6 +648,110 @@
     .works_item.works_item-right Figcaption {
         padding: 40px 45px 0 0;
     }
+
+    /* ПРЕВЮ РОБІТ */
+
+    .prev_item + .prev_item {
+        margin-top: 120px;
+    }
+
+    .works_info .desk {
+        display: flex;
+        align-items: center;
+    }
+
+    .works_info .mob {
+        display: none;
+    }
+
+
+    .top_works {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 46px;
+    }
+
+    .top_works .section_title {
+        margin: 0;
+    }
+
+    .works_info {
+        width: 350px;
+        margin: 0;
+    }
+
+    .site_prev {
+        height: 80vh;
+    }
+
+    .prev_works .btn {
+        margin-top: 60px;
+    }
+
+    .bottom_btns A {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .bottom_btns A:nth-child(1) {
+        padding-left: 80px;
+        border-radius: 6px 0 0 6px;
+        border: 2px solid transparent;
+        transition: 0.3s;
+    }
+
+    .bottom_btns A:nth-child(1):hover {
+        border-color: var(--main-color)
+    }
+
+    .bottom_btns A:nth-child(2) {
+        padding-right: 80px;
+        border-radius: 0 6px 6px 0;
+        border: 2px solid transparent;
+        transition: 0.3s;
+    }
+
+    .bottom_btns A:nth-child(2):hover {
+        border-color: var(--main-color)
+    }
+
+    .bottom_btns A::after {
+        width: 25px;
+    }
+
+    .bottom_btns A:nth-child(1)::after {
+        top: 50px;
+        left: 40px;
+    }
+
+    .bottom_btns A:nth-child(2)::after {
+        top: 50px;
+        right: 40px;
+    }
+
+    .bottom_btns A::before {
+        width: 14px;
+        height: 14px;
+    }
+
+    .bottom_btns A:nth-child(1)::before {
+        top: 44px;
+        left: 40px;
+    }
+
+    .bottom_btns A:nth-child(2)::before {
+        top: 44px;
+        right: 40px;
+    }
+
+    .bottom_btns A B {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+
+    .bottom_btns A Span {
+        font-size: 16px;
+    }
 }
 
 @media only screen and (min-width : 1280px) {
@@ -593,6 +784,8 @@
     .figure_links .style_link:nth-child(1) {
         margin-right: 90px;
     }
+
+    /* ПРЕВЮ РОБІТ */
 }
 
 @media only screen and (min-width : 1540px) {
@@ -627,4 +820,6 @@
     .works_list .centre:nth-child(2n + 2) {
         transform: translate(-85px);
     }
+
+    /* ПРЕВЮ РОБІТ */
 }
