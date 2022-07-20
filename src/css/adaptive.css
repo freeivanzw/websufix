@@ -7,6 +7,7 @@
   /* ЕТАПИ РОЗРОБКИ */
   /* БАННЕР ДВА */
   /* ПИТАННЯ */
+  /* СПИСОК РОБІТ */
 }
 @media only screen and (min-width: 640px) {
   /* ХЕДЕР */
@@ -121,6 +122,7 @@
 
   /* БАННЕР ДВА */
   /* ПИТАННЯ */
+  /* СПИСОК РОБІТ */
 }
 @media only screen and (min-width: 768px) {
   .main_title,
@@ -236,6 +238,23 @@ h3 {
     flex-wrap: wrap;
   }
 
+  .banner_two.article_scroll .centre {
+    flex-direction: row;
+  }
+
+  .banner_two.article_scroll .article_title {
+    order: 0;
+  }
+
+  .banner_two.article_scroll .banner_two-text {
+    max-height: 905px;
+  }
+
+  .banner_two.article_scroll Figure {
+    order: 0;
+    margin-bottom: 0;
+  }
+
   .banner_two-text {
     font-size: 16px;
     flex: 0 1 50%;
@@ -280,10 +299,49 @@ h3 {
     line-height: 1.6;
     padding: 30px 60px 40px 80px;
   }
+
+  /* СПИСОК РОБІТ */
+  .works_list {
+    padding-top: 32px;
+  }
+
+  .works_item {
+    display: flex;
+  }
+
+  .works_item.works_item-right {
+    flex-direction: row-reverse;
+  }
+
+  .works_photo {
+    flex: 0 1 54%;
+    padding: 0 30px 0 0;
+  }
+
+  .works_item.works_item-right .works_photo {
+    padding: 0 0 0 30px;
+  }
+
+  .works_item Figcaption {
+    flex: 0 1 46%;
+    padding: 40px 0 0 30px;
+  }
+
+  .works_item.works_item-right Figcaption {
+    padding: 40px 30px 0 0;
+  }
+
+  .top_name {
+    font-size: 14px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   :root {
     --section-bottom: 130px;
+  }
+
+  BODY, HTML {
+    font-size: 16px;
   }
 
   /* ХЕДЕР */
@@ -452,16 +510,32 @@ h3 {
 
   /* БАННЕР ДВА */
   .banner_two-text {
-    flex: 0 1 60%;
+    flex: 0 1 55%;
     padding-right: 30px;
   }
 
   .banner_two Figure {
-    flex: 0 1 40%;
+    flex: 0 1 45%;
     padding-left: 30px;
   }
 
   /* ПИТАННЯ */
+  /* СПИСОК РОБІТ */
+  .works_photo {
+    padding: 0 45px 0 0;
+  }
+
+  .works_item.works_item-right .works_photo {
+    padding: 0 0 0 45px;
+  }
+
+  .works_item Figcaption {
+    padding: 40px 0 0 45px;
+  }
+
+  .works_item.works_item-right Figcaption {
+    padding: 40px 45px 0 0;
+  }
 }
 @media only screen and (min-width: 1280px) {
   /* ХЕДЕР */
@@ -471,4 +545,44 @@ h3 {
   /* ЕТАПИ РОЗРОБКИ */
   /* БАННЕР ДВА */
   /* ПИТАННЯ */
+  /* СПИСОК РОБІТ */
+  .figure_links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 42px;
+  }
+
+  .figure_links .style_link + .style_link {
+    margin-top: 0;
+  }
+
+  .figure_links .style_link:nth-child(1) {
+    margin-right: 90px;
+  }
+}
+@media only screen and (min-width: 1540px) {
+  /* ХЕДЕР */
+  /* ФУТЕР */
+  .footer_contacts {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* ГОЛОВНИЙ БАННЕР */
+  /* ПЕРЕВАГИ */
+  /* ЕТАПИ РОЗРОБКИ */
+  /* БАННЕР ДВА */
+  .banner_two.article_scroll .centre {
+    transform: translate(85px);
+  }
+
+  /* ПИТАННЯ */
+  /* СПИСОК РОБІТ */
+  .works_list .centre:nth-child(2n+1) {
+    transform: translate(85px);
+  }
+
+  .works_list .centre:nth-child(2n+2) {
+    transform: translate(-85px);
+  }
 }

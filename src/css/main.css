@@ -199,7 +199,7 @@ BODY, HTML {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1.5;
   width: 100%;
   min-width: 360px;
@@ -401,7 +401,7 @@ a.sub_title:hover {
 }
 
 .centre.slim_centre {
-  max-width: 1200px;
+  max-width: 1370px;
 }
 
 .icon {
@@ -1381,6 +1381,7 @@ a.sub_title:hover {
 
 .btn.write_manager {
   margin-bottom: 132px;
+  width: 100%;
 }
 
 .dev_stage-bg {
@@ -1476,7 +1477,27 @@ a.sub_title:hover {
   flex-direction: column;
 }
 
+.banner_two.article_scroll .centre {
+  display: flex;
+  flex-direction: column;
+}
+
+.banner_two.article_scroll .article_title {
+  order: -2;
+}
+
+.banner_two.article_scroll Figure {
+  order: -1;
+  margin-bottom: 40px;
+}
+
+.banner_two.article_scroll .banner_two-text {
+  max-height: 566px;
+  overflow-y: auto;
+}
+
 .banner_two-text {
+  line-height: 1.6;
   font-size: 14px;
 }
 
@@ -1528,7 +1549,7 @@ a.sub_title:hover {
   font-size: 14px;
   display: flex;
   align-items: center;
-  padding: 10px 45px 10px 15px;
+  padding: 15px 45px 15px 15px;
   width: 100%;
   min-height: 57px;
   background-color: var(--bg-neutral-color);
@@ -1579,4 +1600,102 @@ a.sub_title:hover {
 
 .accordion Li.active .accordion_box {
   display: block;
+}
+
+/* СПИСОК РОБІТ */
+.works_list {
+  padding-top: 10px;
+  margin-bottom: var(--section-bottom);
+}
+
+.works_item + .works_item {
+  margin-top: 80px;
+}
+
+.works_photo {
+  display: block;
+  margin-bottom: 20px;
+  width: 100%;
+  height: auto;
+}
+
+.works_photo Img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  transition: 0.3s;
+  border: 2px solid transparent;
+}
+
+a.works_photo:hover Img {
+  border: 2px solid var(--main-color);
+}
+
+.works_item Figcaption {
+  display: flex;
+  flex-direction: column;
+}
+
+.top_name {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 1.2;
+  display: inline-block;
+  margin-bottom: 5px;
+  padding: 8px;
+  max-width: max-content;
+  background-color: var(--main-neutral-color);
+  transition: 0.3s;
+}
+
+.works_item a.section_title {
+  max-width: max-content;
+}
+
+.works_item a.section_title:hover {
+  color: var(--main-color);
+}
+
+.figure_links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.figure_links .style_link {
+  max-width: max-content;
+}
+
+.figure_links .style_link + .style_link {
+  margin-top: 20px;
+}
+
+.figure_links .style_link .icon:nth-child(1) {
+  fill: var(--text-color);
+}
+
+.works_item Ul {
+  margin-bottom: 30px;
+}
+
+.works_item Ul Li {
+  padding-left: 10px;
+  position: relative;
+}
+
+.works_item Ul Li + Li {
+  margin-top: 13px;
+}
+
+.works_item Ul Li::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  transform: rotate(-45deg);
+  background-color: var(--main-color);
 }

@@ -11,7 +11,27 @@
     flex-direction: column;
 }
 
+.banner_two.article_scroll .centre {
+    display: flex;
+    flex-direction: column;
+}
+
+.banner_two.article_scroll .article_title {
+    order: -2
+}
+
+.banner_two.article_scroll Figure {
+    order: -1;
+    margin-bottom: 40px;
+}
+
+.banner_two.article_scroll .banner_two-text {
+    max-height: 566px;
+    overflow-y: auto;
+}
+
 .banner_two-text {
+    line-height: 1.6;
     font-size: 14px;
 }
 
