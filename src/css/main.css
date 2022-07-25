@@ -2036,3 +2036,228 @@ a.works_photo:hover Img {
 }
 
 /* ТАРИФИ */
+.tariff {
+  padding-bottom: var(--section-bottom);
+}
+
+.tariff .main_title {
+  text-align: center;
+  width: 100%;
+}
+
+.tariff_list {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 18px;
+  grid-row-gap: 30px;
+  padding-top: 30px;
+}
+
+.tariff_list Li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  border-radius: 0 0 6px 6px;
+  position: relative;
+}
+
+.tariff_list Li.tariff_red {
+  background-color: #D90A2C;
+}
+
+.tariff_list Li.tariff_dark {
+  background-color: #2C2A39;
+}
+
+.tariff_list Li.tariff_white {
+  background-color: #F5F7FA;
+}
+
+.tariff_bg {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  bottom: calc(100% - 1px);
+  left: 0;
+  z-index: -2;
+}
+
+.tariff_img {
+  display: block;
+  width: 225px;
+  height: 225px;
+  object-fit: contain;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.tariff_list Li > * {
+  z-index: 1;
+}
+
+.tariff_title {
+  text-align: center;
+  font-family: "Orelega-One";
+  font-size: 30px;
+  line-height: 1.2;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.tariff_list Li.tariff_red .tariff_title {
+  color: var(--text-contrast);
+}
+
+.tariff_list Li.tariff_dark .tariff_title {
+  color: var(--text-contrast);
+}
+
+.tariff_list Li.tariff_white .tariff_title {
+  color: var(--text-color);
+}
+
+.tariff_price {
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 15px;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.tariff_list Li.tariff_red .tariff_price {
+  color: var(--text-contrast);
+}
+
+.tariff_list Li.tariff_dark .tariff_price {
+  color: var(--text-contrast);
+}
+
+.tariff_list Li.tariff_white .tariff_price {
+  color: var(--text-color);
+}
+
+.tariff_price B {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.tariff_info {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.4;
+  margin-bottom: 44px;
+}
+
+.tariff_list Li.tariff_red .tariff_info {
+  color: var(--text-contrast);
+}
+
+.tariff_list Li.tariff_dark .tariff_info {
+  color: var(--text-contrast);
+}
+
+.tariff_list Li.tariff_white .tariff_info {
+  color: var(--text-color);
+}
+
+.tariff_show {
+  display: inline-block;
+  margin-bottom: 20px;
+  text-decoration: none;
+  border-bottom: 1px dashed var(--main-color);
+  transition: 0.3s;
+}
+
+.tariff_show:hover {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.tariff_list Li.tariff_red .tariff_show {
+  color: var(--text-contrast);
+}
+
+.tariff_list Li.tariff_dark .tariff_show {
+  color: var(--text-contrast);
+}
+
+.tariff_list Li.tariff_white .tariff_show {
+  color: var(--text-color);
+}
+
+.tariff_list .btn {
+  width: 100%;
+}
+
+.open_tariff-details {
+  text-align: start;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--text-color);
+  display: block;
+  margin: 40px auto 0 auto;
+  padding-right: 50px;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.open_tariff-details:hover {
+  color: var(--main-color);
+}
+
+.open_tariff-details::before,
+.open_tariff-details::after {
+  content: "";
+  width: 25px;
+  height: 1px;
+  background-color: var(--text-color);
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+
+.open_tariff-details::after {
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.open_tariff-details.active::after {
+  background-color: var(--main-color);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.open_tariff-details.active::before {
+  background-color: var(--main-color);
+  transform: translateY(-50%) rotate(45deg);
+}
+
+.open_tariff-details span {
+  border-bottom: 1px dashed var(--main-color);
+}
+
+.tariff_details {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.tariff_details Li {
+  margin: 0 10px 10px 0;
+  padding: 15px 20px;
+  background-color: var(--bg-neutral-color);
+  border-radius: 6px;
+}
+
+/* ВІДГУКИ */

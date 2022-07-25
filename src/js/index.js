@@ -79,6 +79,15 @@ $(function () {
         $(this).parent('li').toggleClass('active');
     })
 
+    $('.open_tariff-details').on('click', function () {
+        $(this).toggleClass('active');
+        $('.tariff_details').toggleClass('hidden');
+    })
+
+
+
+
+
     $('.order_delivery').dropdown();
     $('.dropdown-dev_stage').dropdown();
 

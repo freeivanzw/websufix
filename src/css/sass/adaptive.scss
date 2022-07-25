@@ -16,6 +16,10 @@
     /* СПИСОК РОБІТ */
 
     /* ПРЕВЮ РОБІТ */
+
+    /* ТАРИФИ */
+
+    /* ВІДГУКИ */
 }
 
 @media only screen and (min-width : 640px)  {
@@ -138,6 +142,10 @@
     /* СПИСОК РОБІТ */
 
     /* ПРЕВЮ РОБІТ */
+
+    /* ТАРИФИ */
+
+    /* ВІДГУКИ */
 }
 
 @media only screen and (min-width : 768px)  {
@@ -426,6 +434,19 @@
     .mob_prev Img {
         border: 40px solid transparent;
     }
+
+    /* ТАРИФИ */
+
+    .tariff_list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .tariff_list .btn {
+        text-align: center;
+        margin-top: auto;
+    }
+
+    /* ВІДГУКИ */
 }
 
 @media only screen and (min-width : 1024px) {
@@ -752,6 +773,38 @@
     .bottom_btns A Span {
         font-size: 16px;
     }
+
+    /* ТАРИФИ */
+    .tariff_list Li {
+        padding: 30px 45px 45px 45px;
+    }
+
+    .tariff_title {
+        font-size: 52px;
+    }
+
+    .tariff_price {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .tariff_price B {
+        font-size: 40px;
+    }
+
+    .open_tariff-details {
+        margin-top: 60px;
+    }
+
+    .tariff_details {
+        margin-top: 40px;
+    }
+
+    .tariff_details Li {
+        margin: 0 20px 20px 0;
+    }
+
+    /* ВІДГУКИ */
 }
 
 @media only screen and (min-width : 1280px) {
@@ -786,6 +839,10 @@
     }
 
     /* ПРЕВЮ РОБІТ */
+
+    /* ТАРИФИ */
+
+    /* ВІДГУКИ */
 }
 
 @media only screen and (min-width : 1540px) {
@@ -822,4 +879,8 @@
     }
 
     /* ПРЕВЮ РОБІТ */
+
+    /* ТАРИФИ */
+
+    /* ВІДГУКИ */
 }
