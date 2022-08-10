@@ -11,6 +11,7 @@
   /* ПРЕВЮ РОБІТ */
   /* ТАРИФИ */
   /* ВІДГУКИ */
+  /* ВІДЕО ВІДГУКИ */
 }
 @media only screen and (min-width: 640px) {
   /* ХЕДЕР */
@@ -129,6 +130,7 @@
   /* ПРЕВЮ РОБІТ */
   /* ТАРИФИ */
   /* ВІДГУКИ */
+  /* ВІДЕО ВІДГУКИ */
 }
 @media only screen and (min-width: 768px) {
   input[type=text], input[type=password], input[type=tel], input[type=number], textarea {
@@ -420,6 +422,86 @@ h3 {
   }
 
   /* ВІДГУКИ */
+  .reviews {
+    padding-bottom: var(--section-bottom);
+  }
+
+  .reviews .section_title Img {
+    margin-right: 38px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .reviews_list {
+    display: none;
+  }
+
+  .reviews_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 18px;
+  }
+
+  .reviews_item + .reviews_item {
+    margin-left: 0;
+  }
+
+  .reviews_item {
+    width: 100%;
+    flex: 0 0 100%;
+    background-color: #fff;
+    margin-bottom: 40px;
+  }
+
+  /* ВІДЕО ВІДГУКИ */
+  .video_reviews {
+    padding-bottom: var(--section-bottom);
+  }
+
+  .video_reviews .section_title Img {
+    margin-right: 38px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .video_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 18px;
+    overflow-x: unset;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .video_item + .video_item {
+    margin-left: 0;
+  }
+
+  .video_item {
+    flex: 0 0 100%;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .video_previous {
+    margin-bottom: 30px;
+  }
+
+  .video_item-name {
+    font-size: 20px;
+    padding: 0 30px;
+  }
+
+  .video_item-text {
+    font-size: 16px;
+    padding: 0 30px;
+  }
+
+  .video_item .btn {
+    width: calc(100% - 60px);
+    margin: 0 30px;
+  }
 }
 @media only screen and (min-width: 1024px) {
   :root {
@@ -771,6 +853,7 @@ h3 {
   }
 
   /* ВІДГУКИ */
+  /* ВІДЕО ВІДГУКИ */
 }
 @media only screen and (min-width: 1280px) {
   /* ХЕДЕР */
@@ -798,6 +881,7 @@ h3 {
   /* ПРЕВЮ РОБІТ */
   /* ТАРИФИ */
   /* ВІДГУКИ */
+  /* ВІДЕО ВІДГУКИ */
 }
 @media only screen and (min-width: 1540px) {
   /* ХЕДЕР */
@@ -828,4 +912,5 @@ h3 {
   /* ПРЕВЮ РОБІТ */
   /* ТАРИФИ */
   /* ВІДГУКИ */
+  /* ВІДЕО ВІДГУКИ */
 }

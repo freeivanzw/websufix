@@ -1,0 +1,96 @@
+/* ВІДЕО ВІДГУКИ */
+
+.video_reviews .centre.slim_centre {
+    max-width: 1200px;
+}
+
+.video_reviews .section_title {
+    display: flex;
+    align-items: center;
+}
+
+.video_reviews .section_title Img {
+    margin-right: 22px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.video_list {
+    display: flex;
+    overflow-x: auto;
+    width: calc(100% + 40px);
+    padding: 0 20px 40px 20px;
+    margin: 0 -20px;
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.video_list::-webkit-scrollbar {
+    display: none;
+}
+
+.video_item {
+    flex: 0 0 calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0px 40px 40px rgb(37 35 53 / 7%);
+}
+
+.video_item + .video_item {
+    margin-left: 20px;
+}
+
+.video_previous {
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.video_previous Img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.video_previous .icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 17px;
+    right: 17px;
+    pointer-events: none;
+}
+
+.video_item-name {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.2;
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 10px;
+}
+
+.video_item-text {
+    font-size: 12px;
+    color: var(--text-light);
+    display: block;
+    width: 100%;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.video_item .btn {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+}

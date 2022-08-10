@@ -86,8 +86,6 @@ $(function () {
 
 
 
-
-
     $('.order_delivery').dropdown();
     $('.dropdown-dev_stage').dropdown();
 
