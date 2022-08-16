@@ -205,6 +205,7 @@ BODY, HTML {
   min-width: 360px;
   height: 100%;
   color: var(--text-color);
+  position: relative;
 }
 
 body {
@@ -212,14 +213,16 @@ body {
   flex-direction: column;
   width: 100%;
   background-color: var(--site-bg-color);
+  position: relative;
 }
 
 main {
+  position: relative;
   flex: 1 0 auto;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-input[type=text], input[type=password], input[type=tel], input[type=number], textarea {
+input[type=text], input[type=password], input[type=tel], input[type=number], input[type=email], textarea {
   color: #868F9E;
   font-size: 14px;
   line-height: 17px;
@@ -234,15 +237,15 @@ textarea {
   height: 150px;
 }
 
-input[type=text]:hover, input[type=password]:hover, input[type=tel]:hover, input[type=number]:hover, textarea:hover {
+input[type=text]:hover, input[type=password]:hover, input[type=tel]:hover, input[type=number]:hover, input[type=email]:hover, textarea:hover {
   border-color: #FFDCE2;
 }
 
-input[type=text].error, input[type=password].error, input[type=tel].error, input[type=number].error, textarea.error {
+input[type=text].error, input[type=password].error, input[type=tel].error, input[type=number].error, input[type=email].error, textarea.error {
   border-color: #EE3C30;
 }
 
-input[type=text]:disabled, input[type=password]:disabled, input[type=tel]:disabled, input[type=number]:disabled, textarea:disabled {
+input[type=text]:disabled, input[type=password]:disabled, input[type=tel]:disabled, input[type=number]:disabled, input[type=email]:disabled, textarea:disabled {
   color: #868F9E;
   background-color: #F5F7FA;
   border-color: #EBEDF0;
@@ -267,7 +270,7 @@ input:focus {
 textarea {
   font-size: 14px;
   line-height: 17px;
-  border: 1px solid #D6D6D6;
+  border: 1px solid #EBEDF0;
   resize: none;
   outline: none;
   padding: 8px;
@@ -1616,6 +1619,19 @@ a.sub_title:hover {
   animation: 15s linear 0s normal none infinite running rot;
 }
 
+.banner_bg-svg {
+  display: block;
+  width: 534px;
+  height: 590px;
+  background-image: url("../images/bg-vector.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  right: -100px;
+  animation: 15s linear 0s normal none infinite running rot;
+  z-index: -1;
+}
+
 /*
 ПИТАННЯ
 */
@@ -2505,4 +2521,65 @@ a.works_photo:hover Img {
 .video_item .btn {
   width: calc(100% - 40px);
   margin: 0 20px;
+}
+
+/* ФОРМА БРИФ */
+.form_box {
+  padding-bottom: var(--section-bottom);
+}
+
+.form_box form {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% + 40px);
+  transform: translateX(-20px);
+  max-width: 775px;
+  margin: 0 auto;
+  padding: 30px 20px 40px 20px;
+  background-color: var(--bg-neutral-color);
+  border-radius: 6px;
+}
+
+.form_box form input {
+  margin-bottom: 15px;
+}
+
+.form_subtitle {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
+  display: block;
+  margin: 10px 0 20px;
+}
+
+.form_social {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 16px;
+  margin-bottom: 30px;
+}
+
+.form_social input[type=radio]:checked,
+.form_social input[type=radio]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.form_social input[type=radio]:checked + label,
+.form_social input[type=radio]:not(:checked) + label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid transparent;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 6px;
+}
+
+.form_social input[type=radio]:checked + label {
+  border: 1px solid var(--sub-main-color);
+}
+
+.form_box form textarea {
+  margin-bottom: 15px;
 }

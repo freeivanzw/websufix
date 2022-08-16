@@ -73,30 +73,87 @@
         </div>
         <a href="#" class="style_link call_back"><span>Передзвоніть мені</span></a>
     </div>
+    <svg class="icon top_svg-anim"><use xlink:href="./images/sprite.svg#top-anim"></use></svg>
 </header>
 <main>
-    <svg class="icon top_svg-anim"><use xlink:href="./images/sprite.svg#top-anim"></use></svg>
     <!-- БАННЕР ДВА -->
     <section class="banner_two">
         <div class="centre slim_centre">
             <article class="banner_two-text">
-                <h2>Заголовок для СЕО тексту</h2>
-                <p>Маленькі діти найбільше схильні до ризику. Нині вони часто залишаються
-                    без нагляду. Тому вони багато часу проводять за монітором комп'ютера, грають у комп'ютерні ігри, дивляться відео чи просто сидять в Інтернеті. Внаслідок цього діти не розвиваються фізично. Вони не проводять час на свіжому повітрі,
-                    не займаються спортом та не грають у ігри. Пізніше їм стає важко спілкуватися
-                    з іншими людьми живими, тому що вони не мають необхідних комунікативних
-                    і соціальних навичок.
-                </p>
-                <p>
-                    Отже, ми можемо підбити підсумок, що сучасні технології, і комп'ютери зокрема, мають як позитивні, і негативні наслідки життя людей. А для того, щоб жити
-                    в гармонії, люди повинні знайти правильний баланс. Вони повинні пам'ятати, що комп'ютер спочатку був створений, щоб допомогти людям, зробити їхнє життя легшим, а не зруйнувати його.
-                </p>
+                <h2>Бриф</h2>
+                <p>Заповніть форму нижче. Бриф допоможе нам вивчити вашу діяльність, потреби і підготувати якісну пропозицію </p>
             </article>
             <figure>
-                <img src="./images/banner-two.png" width="320" height="310" alt="banner-two">
+                <img src="./images/brief.png" width="320" height="310" alt="banner-two">
             </figure>
-            <svg class="icon banner_two-bg"><use xlink:href="./images/sprite.svg#banner_two-bg"></use></svg>
         </div>
+    </section>
+    <!--ФОРМА БРИФ-->
+    <section class="form_box">
+         <div class="centre slim_centre">
+             <form>
+                 <input type="text" placeholder="Введіть ваше ім'я">
+                 <input type="text" placeholder="Введіть номер телефону для зв'язку">
+                 <span class="form_subtitle">Виберіть зручний вид зв'язку</span>
+                 <div class="form_social">
+                     <div class="social_form-item">
+                         <input type="radio" name="rb" id="rb1" checked>
+                         <label for="rb1"> <svg class="icon"><use xlink:href="./images/sprite.svg#form-tel"></use></svg><span>Телефон</span></label>
+                     </div>
+                     <div class="social_form-item">
+                         <input type="radio" name="rb" id="rb2">
+                         <label for="rb2"><svg class="icon"><use xlink:href="./images/sprite.svg#form-viber"></use></svg><span>Viber</span></label>
+                     </div>
+                     <div class="social_form-item">
+                         <input type="radio" name="rb" id="rb3">
+                         <label for="rb3"><svg class="icon"><use xlink:href="./images/sprite.svg#form-telegram"></use></svg><span>Telegram</span></label>
+                     </div>
+                 </div>
+                 <input type="email" placeholder="Введіть ваш e-mail">
+                 <textarea placeholder="Чим ви займаєтесь? Напишіть про ваш бізнес"></textarea>
+                 <input type="text" placeholder="Назва компанії / бренду">
+                 <textarea placeholder="Ваші ключові продукти / послуги"></textarea>
+                 <textarea placeholder="Ваші переваги над конкурентами"></textarea>
+                 <textarea placeholder="Хто ваші клієнти?"></textarea>
+                 <span class="form_subtitle">Як ви вважаєте, що ми можемо для вас зробити?</span>
+                 <div class="form_select">
+                     <div class="form_select-item">
+                         <input type="checkbox" id="cb1">
+                         <label for="cb1">Розробити якісний дизайн</label>
+                     </div>
+                     <div class="form_select-item">
+                         <input type="checkbox" id="cb2">
+                         <label for="cb2">Зробити функціональний сайт</label>
+                     </div>
+                     <div class="form_select-item">
+                         <input type="checkbox" id="cb3">
+                         <label for="cb3">Наповнити сайт контентом</label>
+                     </div>
+                     <div class="form_select-item">
+                         <input type="checkbox" id="cb4">
+                         <label for="cb4">Налаштувати рекламу в Google Ads</label>
+                     </div>
+                     <div class="form_select-item">
+                         <input type="checkbox" id="cb5">
+                         <label for="cb5">Налаштувати рекламу в Facebook Ads</label>
+                     </div>
+                     <div class="form_select-item">
+                         <input type="checkbox" id="cb6">
+                         <label for="cb6">Розпочати SEO просування</label>
+                     </div>
+                 </div>
+                 <span class="form_subtitle">Який бюджет виділяється на всі роботи?</span>
+                 <small>Вказавши приблизну вартість, ви даєте нам можливість відразу без лишніх роздумів формувати максимально ефективну пропозицію, при цьому ми обов’язково обгрунтуємо необхідність тих чи інших робіт.</small>
+                 <input type="text" placeholder="Очікуваний бюджет на дизайн та/або розробку">
+                 <input type="text" placeholder="Бажане термінування оплати (кількість місяців)">
+                 <input type="text" placeholder="Очікуваний бюджет щомісячних витрат на рекламу">
+                 <textarea placeholder="Ваші додаткові побажання та коментарі"></textarea>
+                 <div class="form_footer">
+                     <span>Натискаючи на кнопку, ви даєте згоду на обробку своїх персональних даних та погоджуєтесь з <a href="#">Політикою конфіденційності</a></span>
+                     <button type="submit" class="btn">Відправити</button>
+                 </div>
+             </form>
+         </div>
     </section>
 </main>
 <footer class="site_footer">

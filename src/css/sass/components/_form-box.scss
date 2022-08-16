@@ -1,0 +1,60 @@
+/* ФОРМА БРИФ */
+.form_box {
+    padding-bottom: var(--section-bottom);
+}
+
+.form_box form {
+    display: flex;
+    flex-direction: column;
+    width: calc(100% + 40px);
+    transform: translateX(-20px);
+    max-width: 775px;
+    margin: 0 auto;
+    padding: 30px 20px 40px 20px;
+    background-color: var(--bg-neutral-color);
+    border-radius: 6px;
+}
+
+.form_box form input {
+    margin-bottom: 15px;
+}
+
+.form_subtitle {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.4;
+    display: block;
+    margin: 10px 0 20px;
+}
+
+.form_social {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 16px;
+    margin-bottom: 30px;
+}
+
+.form_social input[type="radio"]:checked,
+.form_social input[type="radio"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.form_social input[type="radio"]:checked + label, 
+.form_social input[type="radio"]:not(:checked) + label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid transparent;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.form_social input[type="radio"]:checked + label {
+    border: 1px solid var(--sub-main-color);
+}
+
+.form_box form textarea {
+    margin-bottom: 15px;
+}

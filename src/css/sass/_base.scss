@@ -8,6 +8,7 @@ BODY, HTML {
     min-width: 360px;
     height: 100%;
     color: var(--text-color);
+    position: relative;
 }
 
 body {
@@ -15,14 +16,17 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: var(--site-bg-color);
+    position: relative;
+
 }
 
 main {
+    position: relative;
     flex: 1 0 auto;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
-input[type=text], input[type=password], input[type=tel], input[type=number], textarea {
+input[type=text], input[type=password], input[type=tel], input[type=number], input[type=email], textarea {
     color: #868F9E;
     font-size: 14px;
     line-height: 17px;
@@ -37,15 +41,15 @@ textarea {
     height: 150px;
 }
 
-input[type=text]:hover, input[type=password]:hover, input[type=tel]:hover, input[type=number]:hover, textarea:hover {
+input[type=text]:hover, input[type=password]:hover, input[type=tel]:hover, input[type=number]:hover,input[type=email]:hover, textarea:hover {
     border-color: #FFDCE2;
 }
 
-input[type=text].error, input[type=password].error, input[type=tel].error, input[type=number].error, textarea.error {
+input[type=text].error, input[type=password].error, input[type=tel].error, input[type=number].error,input[type=email].error, textarea.error {
     border-color: #EE3C30;
 }
 
-input[type=text]:disabled, input[type=password]:disabled, input[type=tel]:disabled, input[type=number]:disabled, textarea:disabled {
+input[type=text]:disabled, input[type=password]:disabled, input[type=tel]:disabled, input[type=number]:disabled,input[type=email]:disabled, textarea:disabled {
     color: #868F9E;
     background-color: #F5F7FA;
     border-color: #EBEDF0;
@@ -70,7 +74,7 @@ input:focus {
 textarea  {
     font-size: 14px;
     line-height: 17px;
-    border: 1px solid #D6D6D6;
+    border: 1px solid #EBEDF0;
     resize: none;
     outline: none;
     padding: 8px;
