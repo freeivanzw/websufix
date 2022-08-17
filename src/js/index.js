@@ -65,12 +65,11 @@ $(function () {
         });
     };
 
-    $('.banner_two').each(function () {
-        let $imageBg = $('<div class="banner_bg-svg"></div>');
-        $(this).after($imageBg)
-        $imageBg.css('top', ($(this).offset().top + $(this).height()) + 'px');
-        console.log()
-    })
+    // $('.banner_two').each(function () {
+    //     let $imageBg = $('<div class="banner_bg-svg"></div>');
+    //     $(this).after($imageBg)
+    //     $imageBg.css('top', ($(this).offset().top + $(this).height()) + 'px');
+    // })
 
     $('.mob_menu-open').on('click', function () {
         $('.mob_menu').addClass('active')

@@ -55,6 +55,120 @@
     border: 1px solid var(--sub-main-color);
 }
 
+.form_social .icon {
+    margin-bottom: 10px;
+}
+
+.form_select {
+    margin-bottom: 30px;
+}
+
 .form_box form textarea {
+    height: 120px;
     margin-bottom: 15px;
+}
+
+.form_select-item + .form_select-item {
+    margin-top: 10px;
+}
+
+.form_select input[type="checkbox"]:checked, 
+.form_select input[type="checkbox"]:not(:checked) {
+    position: absolute;
+    left: -9999px;
+}
+
+.form_select input[type="checkbox"]:checked + label, 
+.form_select input[type="checkbox"]:not(:checked) + label {
+    font-weight: 500;
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 20px 10px 20px 55px;
+    line-height: 20px;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+.form_select input[type="checkbox"]:checked + label:before, 
+.form_select input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+}
+
+.form_select input[type="checkbox"]:checked + label:before, 
+.form_select input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 2px;
+}
+
+.form_select input[type="checkbox"]:checked + label:after, 
+.form_select input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.form_select input[type="checkbox"]:checked + label:after, 
+.form_select input[type="checkbox"]:not(:checked) + label:after {
+    left: 24px;
+    top: 26px;
+    width: 10px;
+    height: 6px;
+    border-radius: 1px;
+    border-left: 3px solid #000;
+    border-bottom: 3px solid #000;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.form_select input[type="checkbox"]:not(:checked) + label:after {
+    opacity: 0;
+}
+
+.form_select input[type="checkbox"]:checked + label:after {
+    opacity: 1;
+}
+
+.form_box form small {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.form_footer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.form_footer .btn {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.form_footer span {
+    font-size: 10px;
+    line-height: 1.4;
+    color: var(--text-light);
+    text-align: center;
+}
+
+.form_footer span a {
+    color: var(--text-light);
 }
