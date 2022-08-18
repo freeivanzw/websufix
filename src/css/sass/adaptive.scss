@@ -26,6 +26,8 @@
     /* ФОРМА БРИФ */
 
     /* ПОПАП */
+
+    /* КРОКИ АНКЕТИ */
 }
 
 @media only screen and (min-width : 640px)  {
@@ -215,6 +217,9 @@
         height: 230px;
         margin: -115px auto 30px auto;
     }
+
+    /* КРОКИ АНКЕТИ */
+
 }
 
 @media only screen and (min-width : 768px)  {
@@ -697,6 +702,24 @@
     }
 
     /* ПОПАП */
+
+    /* КРОКИ АНКЕТИ */
+
+    .steps {
+        padding-top: 30px;
+    }
+
+    .steps_back {
+        font-size: 24px;
+    }
+
+    .steps_back Small {
+        font-size: 18px;
+    }
+
+    .steps_progress-nav B {
+        font-size: 24px;
+    }
 }
 
 @media only screen and (min-width : 1024px) {
@@ -1061,6 +1084,43 @@
     /* ФОРМА БРИФ */
 
     /* ПОПАП */
+
+    /* КРОКИ АНКЕТИ */
+
+    .steps_name {
+        margin-bottom: 40px;
+        padding-left: 95px;
+        text-align: left;
+    }
+
+    .steps_progress-nav {
+        padding: 0 95px;
+    }
+
+    .steps-content {
+        padding: 60px 95px 100px 95px;
+    }
+
+    .first_step {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .first_step-img {
+        flex: 0 1 35%;
+    }
+
+    .first_step figcaption {
+        flex: 0 1 65%;
+    }
+
+    .first_step-text {
+        font-size: 40px;
+    }
+
+    .first_step Input[type=text] {
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (min-width : 1280px) {
@@ -1105,6 +1165,17 @@
     /* ФОРМА БРИФ */
 
     /* ПОПАП */
+
+    /* КРОКИ АНКЕТИ */
+
+    .first_step-img {
+        flex: 0 1 50%;
+        margin-bottom: 0;
+    }
+
+    .first_step figcaption {
+        flex: 0 1 50%;
+    }
 }
 
 @media only screen and (min-width : 1540px) {
@@ -1151,4 +1222,6 @@
     /* ФОРМА БРИФ */
 
     /* ПОПАП */
+
+    /* КРОКИ АНКЕТИ */
 }

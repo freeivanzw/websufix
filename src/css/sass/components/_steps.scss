@@ -1,0 +1,135 @@
+/* КРОКИ АНКЕТИ */
+
+.steps {
+    padding-top: 10px;
+    padding-bottom: var(--section-bottom);
+    background-color: var(--bg-neutral-color);
+}
+
+.steps_name {
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.steps_progress {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps_progress-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.steps_back {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 500;
+    position: relative;
+    padding-left: 25px;
+}
+
+.steps_back::before {
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.steps_back::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid var(--main-color);
+    border-left: 1px solid var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.steps_back Small {
+    font-size: 12px;
+    color: var(--text-light);
+}
+
+.steps_progress-nav B {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.steps_progress-line {
+    margin-left: -20px;
+    width: calc(100% + 40px);
+    height: 6px;
+    background-color: #d0d0d0;
+    position: relative;
+}
+
+.steps_progress-line::before {
+    content: "";
+    width: var(--progress);
+    height: 6px;
+    background-color: var(--sub-main-color);
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.steps-content {
+    padding: 30px 20px 50px 20px;
+    margin-left: -20px;
+    width: calc(100% + 40px);
+    background-color: #fff;
+}
+
+.first_step {
+    width: 100%;
+}
+
+.first_step-img {
+    margin-bottom: 62px;
+    width: 100%;
+    height: auto;
+}
+
+.first_step-img Img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.first_step figcaption {
+    display: flex;
+    flex-direction: column;
+}
+
+.first_step-text {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 1.4;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.first_step Input[type=text] {
+    margin-bottom: 15px;
+    max-width: 370px;
+}
+
+.first_step .btn {
+    width: 100%;
+    max-width: 370px;
+}
