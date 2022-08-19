@@ -194,6 +194,58 @@
   }
 
   /* КРОКИ АНКЕТИ */
+  .select_type Label {
+    flex: 0 1 calc(25% - 8px);
+  }
+
+  .select_type Label:nth-child(2n+1) {
+    margin-right: 10px;
+  }
+
+  .select_type Label {
+    margin-right: 10px;
+  }
+
+  .select_type Label:nth-child(4n+4) {
+    margin-right: 0;
+  }
+
+  .steps_form Button[type=submit] {
+    width: auto;
+  }
+
+  .steps_column .dropdown {
+    width: 50%;
+    max-width: 370px;
+  }
+
+  .select_file:not(.select_file-grid) .file {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .select_file:not(.select_file-grid) .file > .col-1 {
+    flex: 1 1 auto;
+  }
+
+  .select_file:not(.select_file-grid) .file > .col-2 {
+    flex: 0 0 200px;
+  }
+
+  .select_file.select_file-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+
+  .select_file.select_file-grid .file + .file {
+    margin-top: 0;
+  }
+
+  .select_file.select_file-grid .btn.btn_light {
+    width: max-content;
+  }
 }
 @media only screen and (min-width: 768px) {
   input[type=text], input[type=password], input[type=tel], input[type=number], textarea {
@@ -680,6 +732,10 @@ h3 {
   .steps_progress-nav B {
     font-size: 24px;
   }
+
+  .color_select {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 @media only screen and (min-width: 1024px) {
   :root {
@@ -1069,6 +1125,36 @@ h3 {
   .first_step Input[type=text] {
     margin-bottom: 30px;
   }
+
+  .steps_column {
+    flex-direction: row;
+  }
+
+  .steps_column > .col-1 {
+    flex: 0 0 300px;
+    margin-bottom: 0;
+    padding-right: 30px;
+  }
+
+  .steps_column > .col-1 B {
+    font-size: 24px;
+  }
+
+  .steps_column > .col-1 Small {
+    font-size: 16px;
+  }
+
+  .steps_column > .col-1 a {
+    font-size: 14px;
+  }
+
+  .steps_column > .col-2 {
+    flex: 1 1 auto;
+  }
+
+  .steps_form Button[type=submit] {
+    margin-left: 300px;
+  }
 }
 @media only screen and (min-width: 1280px) {
   /* ХЕДЕР */
@@ -1107,6 +1193,45 @@ h3 {
 
   .first_step figcaption {
     flex: 0 1 50%;
+  }
+
+  .select_type {
+    padding-bottom: 90px;
+  }
+
+  .select_type Label {
+    flex: 0 1 calc(25% - 24px);
+    margin-right: 32px;
+  }
+
+  .select_type Label:nth-child(2n+1) {
+    margin-right: 32px;
+  }
+
+  .select_type-img {
+    margin-bottom: 22px;
+  }
+
+  .select_type Figure B {
+    font-size: 24px;
+  }
+
+  .select_type Figure Span {
+    font-size: 16px;
+  }
+
+  .steps_form Button[type=submit] {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .color_select {
+    grid-gap: 30px;
+    max-width: 770px;
+  }
+
+  .file {
+    padding: 25px 30px;
   }
 }
 @media only screen and (min-width: 1540px) {

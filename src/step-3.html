@@ -82,21 +82,142 @@
             <span class="steps_name">[Назва компанії]</span>
             <div class="steps_progress">
                 <div class="steps_progress-nav">
-                    <a href="#" class="steps_back steps_disable">Крок 1 <small>/ 16</small></a>
+                    <a href="#" class="steps_back">Крок 3 <small>/ 16</small></a>
                     <b>Ідентифікація</b>
                 </div>
-                <div class="steps_progress-line" style="--progress: 10%"></div>
+                <div class="steps_progress-line" style="--progress: 15%"></div>
             </div>
             <div class="steps-content">
-                <figure class="first_step">
-                    <div class="first_step-img"><img src="./images/step-1.png" alt="first step img"></div>
-                    <figcaption>
-                        <span class="section_title">Заповніть анкету — отримайте сайт</span>
-                        <span class="first_step-text">Розпочнемо?</span>
-                        <input type="text" placeholder="Введіть назву вашої компанії">
-                        <button type="submit" class="btn">Продовжити</button>
-                    </figcaption>
-                </figure>
+                <form class="steps_form">
+                    <div class="section_title">Вкажіть візуальні налаштування майбутнього сайту:</div>
+                    <div class="steps_column">
+                        <div class="col-1">
+                            <b>Основні кольори <span>*</span></b>
+                            <small>Hex</small>
+                        </div>
+                        <div class="col-2">
+                            <div class="color_select">
+                                <div class="color_item">
+                                    <input type="color" value="#ff0000">
+                                    <input type="text">
+                                </div>
+                                <div class="color_item">
+                                    <input type="color" value="#000000">
+                                    <input type="text">
+                                </div>
+                                <div class="color_item">
+                                    <input type="color" value="#ffffff">
+                                    <input type="text">
+                                </div>
+                                <div class="color_item">
+                                    <input type="color" value="#ffffff">
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps_column">
+                        <div class="col-1">
+                            <b>Основний шрифт</b>
+                        </div>
+                        <div class="col-2">
+                            <div class="dropdown dropdown_fonts">
+                                <div class="overflow"><span>Arial</span><button type="button" class="drop_arrow"></button></div>
+                                <ul>
+                                    <li><a href="#">Arial</a></li>
+                                    <li><a href="#">Arial</a></li>
+                                    <li><a href="#">Arial</a></li>
+                                    <li><a href="#">Arial</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps_column">
+                        <div class="col-1">
+                            <b>Радіуси кутів у всіх блоках</b>
+                        </div>
+                        <div class="col-2">
+                            <div class="dropdown dropdown_fonts">
+                                <div class="overflow"><span>3px</span><button type="button" class="drop_arrow"></button></div>
+                                <ul>
+                                    <li><a href="#">1px</a></li>
+                                    <li><a href="#">2px</a></li>
+                                    <li><a href="#">4px</a></li>
+                                    <li><a href="#">5px</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps_column">
+                        <div class="col-1">
+                            <b>Логотип <span>*</span></b>
+                            <a href="#">Створити автоматично по назві</a>
+                        </div>
+                        <div class="col-2">
+                            <div class="select_file select_file-grid">
+                                <div class="file">
+                                    <div class="col-1">
+                                        <b>Завантажити світлий</b>
+                                        <span>Перетягніть файл сюди або виберіть (.png, .jpeg, .svg, .ai). Максимальний розмір файлу 5 Мб</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#" class="btn btn_light">Вибрати файл</a>
+                                        <span class="name_file">test.jpg<a href="#" class="delete_file">delete</a></span>
+                                    </div>
+                                </div>
+                                <div class="file">
+                                    <div class="col-1">
+                                        <b>Завантажити темний</b>
+                                        <span>Перетягніть файл сюди або виберіть (.png, .jpeg, .svg, .ai). Максимальний розмір файлу 5 Мб</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#" class="btn btn_light">Вибрати файл</a>
+                                        <span class="name_file">test.jpg<a href="#" class="delete_file">delete</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps_column">
+                        <div class="col-1">
+                            <b>Фавікон <span>*</span></b>
+                            <a href="#">Створити автоматично по назві</a>
+                        </div>
+                        <div class="col-2">
+                            <div class="select_file">
+                                <div class="file">
+                                    <div class="col-1">
+                                        <span>Перетягніть файл сюди або виберіть (.png, .jpeg, .svg, .ai). Максимальний розмір файлу 5 Мб</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#" class="btn btn_light">Вибрати файл</a>
+                                        <span class="name_file">test.jpg<a href="#" class="delete_file">delete</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="steps_column">
+                        <div class="col-1">
+                            <b>Головне фото <span>*</span></b>
+                            <small>для шапки сайту на фон, рекомендовані розміри 1920x800px</small>
+                        </div>
+                        <div class="col-2">
+                            <div class="select_file">
+                                <div class="file">
+                                    <div class="col-1">
+                                        <span>Перетягніть файл сюди або виберіть (.png, .jpeg, .svg, .ai). Максимальний розмір файлу 5 Мб</span>
+                                    </div>
+                                    <div class="col-2">
+                                        <a href="#" class="btn btn_light">Вибрати файл</a>
+                                        <span class="name_file">test.jpg<a href="#" class="delete_file">delete</a></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn">Наступний крок</button>
+                </form>
             </div>
         </div>
     </section>
@@ -152,7 +273,7 @@
         </div>
     </div>
 </footer>
-<div class="styleguide" hidden>
+<div class="styleguide" >
     <article>
         <h1>hello world1</h1>
         <br>

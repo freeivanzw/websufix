@@ -82,21 +82,58 @@
             <span class="steps_name">[Назва компанії]</span>
             <div class="steps_progress">
                 <div class="steps_progress-nav">
-                    <a href="#" class="steps_back steps_disable">Крок 1 <small>/ 16</small></a>
+                    <a href="#" class="steps_back">Крок 2 <small>/ 16</small></a>
                     <b>Ідентифікація</b>
                 </div>
-                <div class="steps_progress-line" style="--progress: 10%"></div>
+                <div class="steps_progress-line" style="--progress: 15%"></div>
             </div>
             <div class="steps-content">
-                <figure class="first_step">
-                    <div class="first_step-img"><img src="./images/step-1.png" alt="first step img"></div>
-                    <figcaption>
-                        <span class="section_title">Заповніть анкету — отримайте сайт</span>
-                        <span class="first_step-text">Розпочнемо?</span>
-                        <input type="text" placeholder="Введіть назву вашої компанії">
-                        <button type="submit" class="btn">Продовжити</button>
-                    </figcaption>
-                </figure>
+                <form class="steps_form">
+                    <div class="section_title">Виберіть спосіб презентації вашої діяльності:</div>
+                    <div class="select_type">
+                        <label>
+                            <input type="radio" name="srb" id="srb-1" checked>
+                            <figure>
+                                <div class="select_type-img"><img src="./images/select-1.png" alt="select 1"></div>
+                                <figcaption>
+                                    <b>Сайт-резюме</b>
+                                    <span>коротка презентація вашої діяльності на одній сторінці</span>
+                                </figcaption>
+                            </figure>
+                        </label>
+                        <label>
+                            <input type="radio" name="srb" id="srb-2">
+                            <figure>
+                                <div class="select_type-img"><img src="./images/select-2.png" alt="select 2"></div>
+                                <figcaption>
+                                    <b>Сайт-візитка</b>
+                                    <span>декілька сторінок з коротким описом про вашу діяльність</span>
+                                </figcaption>
+                            </figure>
+                        </label>
+                        <label>
+                            <input type="radio" name="srb" id="srb-3">
+                            <figure>
+                                <div class="select_type-img"><img src="./images/select-3.png" alt="select 3"></div>
+                                <figcaption>
+                                    <b>Сайт-блог</b>
+                                    <span>короткий опис про вашу діяльність і блог</span>
+                                </figcaption>
+                            </figure>
+                        </label>
+                        <label>
+                            <input type="radio" name="srb" id="srb-4">
+                            <figure>
+                                <div class="select_type-img"><img src="./images/select-4.png" alt="select 4"></div>
+                                <figcaption>
+                                    <b>Сайт корпоративний</b>
+                                    <span>розширена презентація діяльності, послуг, продукції</span>
+                                </figcaption>
+                            </figure>
+                        </label>
+                    </div>
+                    <button type="submit" class="btn">Наступний крок</button>
+                </form>
             </div>
         </div>
     </section>

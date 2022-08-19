@@ -57,6 +57,11 @@
     transform: translateY(-50%) rotate(45deg);
 }
 
+.steps_back.steps_disable::before,
+.steps_back.steps_disable::after {
+    display: none;
+}
+
 .steps_back Small {
     font-size: 12px;
     color: var(--text-light);
@@ -132,4 +137,307 @@
 .first_step .btn {
     width: 100%;
     max-width: 370px;
+}
+
+.select_type {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 45px;
+}
+
+.select_type Label {
+    flex: 0 1 calc(50% - 5px);
+    cursor: pointer;
+    margin-bottom: 25px;
+}
+
+.select_type Label:nth-child(2n + 1) {
+    margin-right: 10px;
+}
+
+.select_type Input[type=radio] {
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+}
+
+.select_type Figure {
+    width: 100%;
+}
+
+.select_type-img {
+    margin-bottom: 14px;
+    width: 100%;
+    height: auto;
+    border: 2px solid #CCCDCE;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.select_type Input:checked + figure .select_type-img {
+    border-color: var(--sub-main-color);
+}
+
+.select_type-img Img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.select_type figcaption {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 26px;
+}
+
+.select_type figcaption::before {
+    content: "";
+    width: 16px;
+    height: 16px;
+    border: 1px solid #868F9E;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 0;
+    transition: 0.3s;
+}
+
+.select_type Input:checked + figure figcaption::before {
+    border-color: var(--sub-main-color);
+}
+
+.select_type figcaption::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--sub-main-color);
+    opacity: 0;
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    transition: 0.3s;
+}
+
+.select_type Input:checked + figure figcaption::after {
+    opacity: 1;
+}
+
+.select_type Figure B {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.4;
+    display: inline-block;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.steps_form label:hover Figure B {
+    color: var(--sub-main-color);
+}
+
+.select_type Figure Span {
+    font-size: 12px;
+    line-height: 1.4;
+    color: var(--text-light);
+}
+
+.steps_form Button[type=submit] {
+    margin-top: 15px;
+    width: 100%;
+}
+
+.steps_column {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.steps_column > .col-1 {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.steps_column > .col-1 B {
+    font-size: 18px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.steps_column > .col-1 B Span {
+    color: #D90A2C;
+}
+
+.steps_column > .col-1 Small {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--text-light);
+    margin-top: 5px;
+}
+
+.steps_column > .col-1 a {
+    text-decoration: none;
+    color: var(--link-color-active);
+    margin-top: 5px;
+    padding-bottom: 3px;
+    border-bottom: 1px dashed var(--main-color);
+    width: max-content;
+    transition: 0.3s;
+}
+
+.steps_column > .col-1 a:hover {
+    color: var(--link-color);
+}
+
+.color_select {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.color_item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #CCCDCE;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.color_item:hover {
+    border-color: #FFDCE2;
+}
+
+.color_item input[type=color] {
+    -webkit-appearance: none;
+    margin-right: 15px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #CCCDCE;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* -webkit */
+.color_item input[type=color]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+.color_item input[type=color]::-webkit-color-swatch {
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+}
+
+/* firefox */
+.color_item input[type=color]::-moz-focus-inner {
+    border: none;
+    padding: 0;
+    border-radius: 5px;
+}
+
+.color_item input[type=color]::-moz-color-swatch {
+    padding: 0;
+    border: none;
+}
+
+.color_item input[type=text] {
+    width: calc(100% - 45px);
+    padding: 0;
+    height: 30px;
+    border: none;
+}
+
+.steps_column .dropdown {
+    border: 1px solid #CCCDCE;
+    border-radius: 4px;
+}
+
+.select_file {
+    display: flex;
+    flex-direction: column;
+    max-width: 770px;
+}
+
+.file {
+    padding: 15px;
+    border: 1px dashed #CCCDCE;
+    border-radius: 6px;
+}
+
+.file + .file {
+    margin-top: 15px;
+}
+
+.file > .col-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.file B {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 5px;
+}
+
+.file > .col-1 > span {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.file > .col-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.file .btn {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.name_file {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.file .delete_file {
+    font-size: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: relative;
+}
+
+.file .delete_file::before,
+.file .delete_file::after {
+    content: "";
+    width: 15px;
+    height: 1px;
+    background-color: var(--sub-main-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: 0.3s;
+}
+
+.file .delete_file::before {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.file .delete_file::after {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.file .delete_file:hover::before,
+.file .delete_file:hover::after {
+    background-color: #333;
 }

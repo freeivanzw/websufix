@@ -281,6 +281,11 @@ a.sub_title:hover {
     background-color: var(--btn-bg-hover-contrast);
 }
 
+.btn.btn_light {
+    color: var(--sub-main-color);
+    background-color: #F7DFE3;
+}
+
 .close_btn {
     font-size: 0;
     display: flex;
