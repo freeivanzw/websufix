@@ -108,8 +108,6 @@ $(function () {
         $('.test_file')[0].value = '';
     })
 
-
-
     $('.order_delivery').dropdown();
     $('.dropdown-dev_stage').dropdown();
     $('.dropdown_fonts').dropdown();
