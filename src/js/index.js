@@ -102,16 +102,12 @@ $(function () {
         $(this).next()[0].value = $(this)[0].value;
     })
 
-    $('.test_file').on('change', function () {
-        console.log($(this)[0].files[0].name);
-    })
 
     $('.delete_file').on('click', function (e) {
         e.preventDefault()
         $('.test_file')[0].value = '';
     })
 
-    console.log($('.test_file'));
 
 
     $('.order_delivery').dropdown();
