@@ -38,11 +38,9 @@
     z-index: 1;
 }
 
-.preference_list A {
+.preference_item {
     text-decoration: none;
     color: var(--text-color);
-    font-size: 16px;
-    line-height: 1.4;
     display: block;
     width: 100%;
     padding: 16px;
@@ -52,10 +50,28 @@
     z-index: 2;
 }
 
+.preference_item-title {
+    display: block;
+    font-size: 16px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+}
+
 .preference_list Li:nth-child(5n + 5) {
     background-color: var(--site-bg-color);
 }
 
 .preference_list Li:nth-child(5n + 5) a {
     border: 1px dashed var(--main-color);
+}
+
+.preference_item-link {
+    text-decoration: underline;
+    color: var(--link-color);
+    margin-bottom: 8px;
+}
+
+.admin_info {
+    font-size: 14px;
+    line-height: 1.2;
 }

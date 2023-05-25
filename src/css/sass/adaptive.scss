@@ -28,6 +28,8 @@
     /* ПОПАП */
 
     /* КРОКИ АНКЕТИ */
+
+    /*ВЛАСТИВОСТІ*/
 }
 
 @media only screen and (min-width : 640px)  {
@@ -217,6 +219,23 @@
         height: 230px;
         margin: -115px auto 30px auto;
     }
+
+    /*ВЛАСТИВОСТІ*/
+
+    .properties .centre {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .properties .centre > .col-1 {
+        flex: 0 0 50%;
+        padding-right: 40px;
+        margin-bottom: 0;
+    }
+
+    .properties .centre > .col-2 {
+        flex: 0 0 50%;
+    }
 }
 
 @media only screen and (min-width : 768px)  {
@@ -389,7 +408,8 @@
         grid-column: 2/4
     }
 
-    .preference_list A {
+    .preference_list A,
+    .preference_item {
         padding: 30px;
         min-height: 150px;
     }
@@ -700,6 +720,7 @@
 
     /* ПОПАП */
 
+    /*ВЛАСТИВОСТІ*/
 }
 
 @media only screen and (min-width : 1024px) {
@@ -880,7 +901,7 @@
         max-width: 630px;
     }
 
-    .preference_list A {
+    .preference_item-title {
         font-size: 26px;
         transition: 0.3s;
     }
@@ -1065,6 +1086,17 @@
 
     /* ПОПАП */
 
+    /*ВЛАСТИВОСТІ*/
+
+
+    .properties .centre > .col-1 {
+        flex: 1 1 auto;
+        padding-right: 60px;
+    }
+
+    .properties .centre > .col-2 {
+        flex: 0 0 400px;
+    }
 }
 
 @media only screen and (min-width : 1280px) {
@@ -1109,6 +1141,8 @@
     /* ФОРМА БРИФ */
 
     /* ПОПАП */
+
+    /*ВЛАСТИВОСТІ*/
 
 }
 
@@ -1156,5 +1190,7 @@
     /* ФОРМА БРИФ */
 
     /* ПОПАП */
+
+    /*ВЛАСТИВОСТІ*/
 
 }
